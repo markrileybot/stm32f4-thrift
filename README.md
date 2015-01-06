@@ -1,7 +1,9 @@
 stm32f4-thrift
 ==============
 
-An example that uses thrift-nano to read/write messages over usb on an STM32F4
+An example that uses thrift-nano to read/write messages over usb on an STM32F4.  
+
+Based on USB CDC code I found here: http://vedder.se/2012/07/usb-serial-on-stm32f4/
 
 Building
 ========
