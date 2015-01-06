@@ -17,3 +17,10 @@ This project uses the [stm32-cmake toolchain](https://github.com/ObKo/stm32-cmak
 
 The same instructions used to build the example project may be used to build this project.
 
+
+Installing
+==========
+
+You may use your favorite tool to flash.  I like to use [stlink by texane](https://github.com/texane/stlink) which you may get from the [pacman repo](https://www.archlinux.org/packages/community/x86_64/stlink/) if you're running arch linux.  If you have st-link, just do:
+
+> st-flash --reset write stm32-thrift.bin 0x8000000
