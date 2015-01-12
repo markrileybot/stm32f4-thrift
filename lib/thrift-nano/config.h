@@ -3,6 +3,21 @@
 #define __CONFIG_H__
 
 /**
+* override byteswap
+*/
+#define TN_BYTESWAP
+#include <stdint.h>
+int64_t bswap_64(int64_t x);
+int32_t bswap_32(int64_t x);
+int16_t bswap_16(int64_t x);
+#define ntohll(x) bswap_64 (x)
+#define ntohl(x)  bswap_32 (x)
+#define ntohs(x)  bswap_16 (x)
+#define htonll(x) bswap_64 (x)
+#define htonl(x)  bswap_32 (x)
+#define htons(x)  bswap_16 (x)
+
+/**
  * Version stuff
  */
 #define THRIFT_NANO_VERSION_MAJOR 0
